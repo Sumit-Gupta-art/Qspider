@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.pricing-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.pricing-card {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    border: 2px solid transparent;
+}
+
+.border-blue {
+    border-color: #1e40af;
+}
+
+.pricing-header {
+    padding: 20px;
+}
+
+.white-bg {
+    background-color: white;
+}
+
+.blue-text {
+    color: #1e40af;
+}
+
+.price {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.small-text {
+    font-size: 24px;
+}
+
+.per-month {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.pricing-body {
+    padding: 20px;
+}
+
+.blue-bg {
+    background-color: #1e40af;
+}
+
+.white-text {
+    color: white;
+}
+
+.popular {
+    border: 3px solid #ffc107;
+}
+
+.popular-text {
+    color: #ffc107;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.pricing-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.white-bg {
+    background-color: white;
+}
+
+.yellow-bg {
+    background-color: #ffc107;
+}
+
+.pricing-button:hover {
+    background-color: #0a2463;
+    color: white;
+}
