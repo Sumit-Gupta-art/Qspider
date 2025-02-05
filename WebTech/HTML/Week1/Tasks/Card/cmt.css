@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.pri1 {
+    display: flex;
+  /*  flex-wrap: wrap; */
+    gap: 20px;
+    justify-content: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.pric1, .pric2 {
+    width: 280px; /* Side boxes */
+    border-radius: 10px;
+   /* overflow: hidden; */
+    text-align: center;
+    border: 2px solid darkgreen;
+    background-color: white;
+  /*  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+   /* transition: transform 0.3s ease-in-out; */
+}
+
+.pric1:hover, .pric2:hover {
+ /*   transform: scale(1.05);*/
+}
+
+/* Middle box styling */
+.pric2 {
+    width: 320px; /* Bigger box */
+    background-color: darkgreen;
+    color: white;
+}
+
+/* Side boxes - Top White, Bottom Green */
+.up {
+    padding: 20px;
+    background-color: white;
+    color: darkgreen;
+}
+
+.down {
+    padding: 20px;
+    background-color: greenyellow;
+    color: darkgreen;
+}
+
+.up1 {
+    padding: 20px;
+    background-color: darkgreen;
+    color: white;
+}
+
+/* Middle Box: Full Green */
+.down1 {
+    padding: 20px;
+    background-color: darkgreen;
+    color: greenyellow;
+}
+
+/* Popular Tag */
+.popular-text {
+    position: relative;
+    background-color: yellow;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Pricing */
+.price {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.small-text, .sub {
+    font-size: 24px;
+}
+
+.month, .per-month {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+/* Buttons */
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+ /*   cursor: pointer;
+    transition: 0.3s; */
+}
+
+.btn1 {
+    background-color: darkgreen;
+    color: white;
+}
+
+.btn1:hover {
+    background-color: green;
+}
+
+.pricing-button {
+    background-color: yellow;
+    color: black;
+}
+
+.pricing-button:hover {
+    background-color: gold;
+}
