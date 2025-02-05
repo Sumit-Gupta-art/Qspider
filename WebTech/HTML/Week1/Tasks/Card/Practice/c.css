@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.pri1 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.pric1, .pric2 {
+    width: 280px; 
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid darkgreen;
+    background-color: rgb(10, 243, 49);
+}
+
+.pric2 {
+    width: 320px; 
+    background-color: darkgreen;
+    color: white;
+}
+
+
+.up {
+    padding: 20px;
+    background-color: white;
+    color: darkgreen;
+    height: 45%;
+}
+
+.down {
+    padding: 20px;
+    background-color: greenyellow;
+    color: darkgreen;
+    height: 55%;
+}
+
+
+.up1 {
+    padding: 20px;
+    background-color: darkgreen;
+    color: white;
+}
+
+.down1 {
+    padding: 20px;
+    
+    background-color: darkgreen;
+    color: greenyellow;
+}
+
+
+.popular-text {
+    background-color: yellow;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.price {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.small-text, .sub {
+    font-size: 24px;
+}
+
+.month, .per-month {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn1 {
+    background-color: darkgreen;
+    color: white;
+}
+
+.btn1:hover {
+    background-color: green;
+}
+
+.pricing-button {
+    background-color: yellow;
+    color: black;
+}
+
+.pricing-button:hover {
+    background-color: gold;
+}
