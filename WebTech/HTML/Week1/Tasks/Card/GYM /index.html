@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ad8bee;
+            color: #333;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(90deg, rgb(165, 72, 165), rgb(157, 59, 177), rgb(133, 40, 209));
+            padding: 15px 20px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+            margin-left: 20px; /* Adjust the margin as needed */
+        }
+
+        .search-box i {
+            margin-right: 8px;
+        }
+
+        .search-box input {
+            width: 300px; /* Increase the width as needed */
+        }
+
+        .buttons button {
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .buttons button:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .about-us {
+            background-color: #ff6347; /* Tomato color */
+            color: #fff;
+            font-weight: bold;
+        }
+        .about-us:hover {
+            background-color: #fff;
+            color: #ff6347;}
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #000; /* Initial background color */
+            color: #fff; /* Initial text color */
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #fff;
+            color: #000;
+        }
+        .signup {
+            background: white;
+            color: brown;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        
+        .buttons button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        .join {
+            background: rgb(216, 23, 255);
+            color: white;
+            border-radius: 5px;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            text-align: center;
+            background: url('data:image/jpeg;base64,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') no-repeat center center/cover;
+            color: white;
+        }
+        .start {
+            background: rgb(119, 0, 255);
+            color: white;
+            border-radius: 5px;
+        }
+        .buttons button:hover {
+            transform: scale(1.1);
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            margin-right: 450px; /* Adjust the margin as needed */
+        }
+
+        .search-box i {
+            margin-right: 8px;
+        }
+
+        .search-box input {
+            width: 200px; /* Increase the width as needed */
+        }
+
+        .buttons button {
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .buttons button:hover {
+            background-color: #fff;
+            color: #000;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <nav>
+            <div class="logo">GYM</div>
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+            <ul>
+                <li><a href="#about" class="about-us">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#signup" class="signup">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Transform Your Body, Transform Your Life</h1>
+            <p>Join the best gym and start your fitness journey today.</p>
+            <div class="buttons">
+                <button class="join">Join Us</button>
+                <button class="start">Get Started</button>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
