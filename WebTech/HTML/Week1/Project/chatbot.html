@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pricing Page</title>
+  <link rel="stylesheet" href="style.css">
+ <!-- Bootstrap CSS -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <style>
+        .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.pricing-card {
+  width: 300px;
+  margin: 0 10px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.popular {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.plan-header {
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.price span {
+  font-size: 14px;
+}
+
+.plan-features li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.get-started-btn {
+  background-color: #ffc107;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+  button:hover
+  {
+     background-color: white;
+     color: crimson;
+    border: 2px solid crimson;
+
+  }
+  header{
+    height:12vh;
+    width:100%;
+    
+    display: flex;
+  }
+  .left{
+      height:inherit;
+      width:60%;
+      
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      gap:5%;
+  }
+  .right
+  {
+    height:inherit;
+    width:40%;
+    
+    display:flex;
+
+    button
+    {
+      font-weight: 660;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+  }
+  .logo
+  {
+    height:10vh;
+    width:10%;
+    background-color: none;
+    border-radius: 5px;
+    
+
+    
+  }
+  .uordl
+  {
+    
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:30px;
+  }
+  .search
+  {
+    border: none;
+    height:30px;
+    width:70%;
+    padding-left: 15px;
+    outline: none;
+    background-color:transparent;
+    border-radius: 5px;
+    color: black;
+  }
+  .searchcont
+  {
+    background-color: #c1c8d5;
+    width:70%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  
+  }
+  ::placeholder
+  {
+    text-transform: uppercase;
+    text-shadow: red;
+    color:#f0f5ff;
+    font-size:14px;
+    font-weight: 20px;
+  }
+  .banner
+  {
+    width: 100%;
+    height:400px;
+    background-size: cover;
+    background-position: auto;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur;
+    background-image: url("c2.jpg");
+  }
+  .banneritem
+  {
+    height:30%;
+    width: 30%;
+    
+    display: block;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  .bannerhead
+  {
+    font-style: italic;
+    letter-spacing: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    background-image: url("c2.jpg");
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+    outline: #007bff;
+    
+    
+
+  }
+  .bbtn
+  {
+    border:none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    background-image: url("pro.png");
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+    
+  }
+  .main_section
+  {
+    height:60%;
+    width:100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap:20px;
+  }
+  .card{
+      height:300px;
+      width:25%;
+      background-color:wheat;
+      border-radius: 10px;
+      
+      
+  }
+  .card_image
+  {
+    width:100%;
+    height:175px;
+  }
+  .h1
+  {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 660;
+    margin-top: 10px;
+    color:whitesmoke;
+    text-align: center;
+  }
+  .btn1
+  {
+    text-transform: uppercase;
+    color: #c1c8d5;
+    font-size: 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: wheat;
+  }
+  .btn1:hover
+  {
+    color: rgb(190, 190, 25);
+    border-color: #007bff;
+    
+  }
+  .testimonial
+  {
+    
+    
+    width:100%;
+    height:250px
+  }
+
+  .up{
+     border: 2px solid black;
+    width:90%;
+    height:125px;
+    display: flex;
+    
+  }
+
+  .testimonial_des{
+    padding-left: 10px;
+  }
+
+  .down{
+    
+    justify-content:center;
+    align-items: center;
+    width:25%;
+    text-align:center;
+    padding-bottom:40px;
+  }
+  .pic{
+    height: 75px;
+    width: 75px;
+    border-radius: 50px;
+    padding-top: 25px;
+  }
+
+  .foot{
+  justify-content: space-around;
+  display: flex;
+  margin-left: 25px;
+  }
+#chatbot
+{
+ 
+}
+#chatimage
+{
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  display: flex;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+.botimage
+{
+ display:none;
+}
+.footer
+{
+  width:100%;
+  height:300px;
+  display: flex;
+  position: relative;
+  bottom: 5px;
+  background-color: red;
+
+}
+    </style>
+    <header>
+          <div class="left">
+            <img  class="logo" src="logo.png" alt="">
+           <div class="searchcont">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input class="search" type="search" placeholder="Search Here">
+</div>
+          </div>
+          <div class="right">
+            <ul class="uordl">
+              <li><a href="#" ><button>HOME</button></a></li>
+              <li><a href="#" ><button>ABOUT US</button></a></li>
+              <li><a href="#" ><button>LOGIN</button></a></li>
+              <li><a href="#" ><button>HELP & FEEDBACK</button></a></li>
+            </ul>
+
+          </div>
+    </header>
+    <section class="banner">
+      <div align="center" class="banneritem">
+        <h1 class="bannerhead">BE CREATIVE</h1>
+      <button class="bbtn">
+        get started
+      </button>
+      <button class="bbtn">
+        join us
+      </button>
+      </div>
+    </section>
+    
+      <!-- main -->
+       <main class="main_section">
+        <div class="card" align="center">
+          <img src="creat.jpg" alt="" class="card_image">
+          <h1 class="h1">VARIATION</h1>
+          <button class="btn1">
+            create
+          </button>
+        </div>
+        <div class="card" align="center">
+          <img src="c2.jpg" alt="" class="card_image">
+          <h1 class="h1">VARIATION</h1>
+          <button class="btn1">
+            create
+          </button>
+        </div>
+        <div class="card" align="center">
+          <img src="c3.jpg" alt="" class="card_image">
+          <h1 class="h1">VARIATION</h1>
+          <button class="btn1">
+            create
+          </button>
+        </div>
+       </main>
+       
+    <!-- testimonial -->
+     <div class="foot">
+     <div class="testimonial">
+      <div class="up">
+        <img class="pic"src="pro.png" alt="">
+        <p class="testimonial_des">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab dolorum magnam quidem repellendus atque cupiditate veniam eos, culpa eum dolore porro error obcaecati, nemo consectetur maiores a ut commodi.
+        </p>
+      </div>
+      <div class="down">
+        <p>Sumit</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+
+     </div>
+
+     <div class="testimonial">
+      <div class="up">
+        <img class="pic"src="pro.png" alt="">
+        <p class="testimonial_des">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab dolorum magnam quidem repellendus atque cupiditate veniam eos, culpa eum dolore porro error obcaecati, nemo consectetur maiores a ut commodi.
+        </p>
+      </div>
+      <div class="down">
+        <p>Prathmesh</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        
+      </div>
+
+     </div>
+
+     <div class="testimonial">
+      <div class="up">
+        <img class="pic"src="pro.png" alt="">
+        <p class="testimonial_des">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab dolorum magnam quidem repellendus atque cupiditate veniam eos, culpa eum dolore porro error obcaecati, nemo consectetur maiores a ut commodi.
+        </p>
+      </div>
+      <div class="down">
+        <p>Deepak</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+
+     </div>
+
+     </div>
+     
+     <div class="footer">
+     <div class="links">
+      <h1>h1</h1>
+        <ul>
+          <li>linkedin</li>
+          <li>linkedin</li>
+          <li>linkedin</li>
+        </ul>
+     </div>
+     <div class="aboutus">
+      <h1><strong>Get To Know us</strong></h1>
+      <ul>
+        <li>linkedin</li>
+        <li>linkedin</li>
+        <li>linkedin</li>
+      </ul>
+     </div>
+     <div class="contact">
+      <ul>
+        <li>linkedin</li>
+        <li>linkedin</li>
+        <li>linkedin</li>
+      </ul>
+     </div>
+     <div class="help">
+      <ul>
+        <li>linkedin</li>
+        <li>linkedin</li>
+        <li>linkedin</li>
+      </ul>
+     </div>
+     </div>
+     <div id="chatbot">
+      <img src="chatbot.png" alt="image" id="chatimage">
+    </div>
+
+   <!-- Option 1: Bootstrap Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
