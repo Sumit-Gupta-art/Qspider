@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Company Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+            padding: 10px 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .logo img {
+            height: 40px;
+        }
+        .navbar .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar .search-box {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            border-radius: 20px;
+        }
+        .navbar .search-box input {
+            border: none;
+            outline: none;
+            padding: 5px;
+        }
+        .navbar .icons {
+            display: flex;
+            gap: 15px;
+        }
+        .photo-section {
+            display: grid;
+           
+            gap: 10px;
+            width: 50%;
+            margin: auto;
+            align-items: end;
+        }
+        .photo-box {
+            background-color: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .photo-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .carousel {
+            width: 100%;
+            overflow: hidden;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .carousel img {
+            width: 100%;
+            height: auto;
+        }
+        footer {
+            background: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .footer-column {
+            width: 30%;
+            text-align: left;
+        }
+        .footer-column h3 {
+            margin-bottom: 10px;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .social-links a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .social-links a i {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="uc-logo.png" alt="Urban Company">
+        </div>
+        <div class="nav-links">
+            <a href="#">Beauty</a>
+            <a href="#">Decor</a>
+            <a href="#">Native</a>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Search for 'AC service'">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="icons">
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-user-circle"></i>
+        </div>
+    </div>
+    
+    <div class="container text-center" align="right">
+        <div class="photo-section">
+            <!-- <div class="photo-box"><img src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/dpr_1,fl_progressive:steep,q_auto:low,f_auto,c_limit/images/growth/home-screen/1696852847761-574450.jpeg" alt="Photo 1"></div> -->
+            <div class="photo-box"><img src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/dpr_1,fl_progressive:steep,q_auto:low,f_auto,c_limit/images/growth/home-screen/1696852847761-574450.jpeg"></div>
+            <!-- <div class="photo-box"><img src="image3.jpg" alt="Photo 3"></div> -->
+            <!-- <div class="photo-box"><img src="image4.jpg" alt="Photo 4"></div> -->
+        </div>
+    </div>
+    
+    <div class="carousel">
+        <img src="https://via.placeholder.com/1200x500" alt="Slide 1">
+        <img src="https://via.placeholder.com/1200x500" alt="Slide 2">
+        <img src="https://via.placeholder.com/1200x500" alt="Slide 3">
+    </div>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Company</h3>
+                <p>About us</p>
+                <p>Terms & conditions</p>
+                <p>Privacy policy</p>
+                <p>Anti-discrimination policy</p>
+                <p>UC impact</p>
+                <p>Careers</p>
+            </div>
+            <div class="footer-column">
+                <h3>For customers</h3>
+                <p>UC reviews</p>
+                <p>Categories near you</p>
+                <p>Blog</p>
+                <p>Contact us</p>
+            </div>
+            <div class="footer-column">
+                <h3>For partners</h3>
+                <p>Register as a professional</p>
+                <h3>Social Links</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
